@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // conditional statement 
+    //1. if ,if -else ,nested if lese  ,switch ,ternary
+/*
+
+    if(condtion)
+    {
+
+        if(condtion)
+        {
+
+            if(condtion)
+            {
+
+            }
+            else{}
+     }else{}   
+    }
+*/
+
+var p,c,m;
+p=parseInt(prompt("Enter physics number "))
+c=parseInt(prompt("Enter chemistry number "))
+m=parseInt(prompt("Enter maths number "))
+if(p<100 && c<100 && m<100)
+{
+    if(p>=33)
+    {
+
+        if(c>=33)
+        {
+            if(m>=33)
+            {
+                alert("Pass in all subject ");
+            }
+            else{
+
+                alert("pass in p and c supply in m");
+            }
+        }
+        else{
+
+            if(m>=33)
+            {
+
+                alert("pass in p and m supply c");
+            }
+            else{
+                alert("pass in P and fail c and m");
+            }
+         }
+ } 
+ else{
+
+        if(c>=33)
+        {
+
+            if(m>=33)
+            {
+
+                alert("pass c and m supp p");
+               }
+               else
+               {
+                alert("pass c fasil p, m");
+               }
+        }
+        else{
+
+            if(m>=33)
+            {
+                alert("pass in m and fail in c and p");
+            }
+            else
+            {
+
+                alert("Fail in all subject ");
+            }
+        }
+ }
+}
+else{
+
+    alert("Plz contact your university of collage ");
+}
+
+</script>
+</body>
+</html>

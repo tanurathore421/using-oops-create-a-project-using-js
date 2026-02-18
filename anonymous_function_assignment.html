@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // with parameters
+        let add= function(a,b,c){
+            return a+b+c;
+        }
+    console.log("addition is",add(2,3,4)) ;
+
+
+
+    //as callback
+    setTimeout(function()
+    {
+       console.log("hello world after 3s");
+
+    },3000);
+
+
+
+    //arrow function(modern anonymous function)
+    let sub=(a,b) => {
+     return a-b;
+    } ;  
+    console.log("subtraction is",sub(8,5));
+
+    //que 1
+       let square=(a)=>{
+        return a*a;
+       }
+       console.log("square is",square(4));
+
+
+       //que 2
+       let text=()=>{
+        console.log("hello student!");
+       }
+       text()
+
+       
+    </script>
+</body>
+</html>
+
+
+

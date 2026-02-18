@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*class Bank {
+            constructor(balance) {
+                let _balance = balance;
+
+                this.getA = functon()
+                {
+                    return _balance;
+                };
+
+                this.deposit = function (amount) {
+                    _balance += amount;
+
+                };
+            }
+        }
+        let x = new Bank(1000);
+        x.deposit(500);
+        document.write(x.getA());*/
+
+        //que 1 (encapsulation)
+        class BankAccount {
+            constructor(accountNumber, balance) {
+                let _accountNumber = accountNumber;
+                let _balance = balance;
+
+                this.getBalance = function () {
+                    return _balance;
+                }
+
+                this.deposit = function (amount) {
+                    _balance += amount;
+                }
+
+                this.withdraw = function (amount) {
+                    _balance -= amount;
+                }
+
+
+            }
+        }
+        let acc = new BankAccount(102, 1000);
+
+        acc.deposit(500);
+        acc.withdraw(200);
+
+        document.write(acc.getBalance(),"<br>");
+
+        //que 2
+        class Employee {
+            constructor(salary) {
+                let _salary = salary;
+
+                this.setSalary = function (amount) {
+                    if (amount > 0) {
+                        _salary = amount;
+                    }
+                }
+
+                this.getSalary = function () {
+                    return _salary;
+                }
+            }
+        }
+        let emp = new Employee();
+        emp.setSalary(20000);
+        document.write(emp.getSalary(),"<br>");
+
+
+        //que 3(inheritance)
+        class Vehicle{
+            constructor(brand,speed)
+            {
+                this.brand=brand;
+                this.speed=speed;
+            }
+
+            start(){
+                document.write("vehicle started");
+            }
+        }
+
+        class Car extends Vehicle{
+            constructor(brand,speed,fueltype){
+                super (brand,speed);
+                this.fueltype=fueltype;
+            }
+        }
+        class Bike extends Vehicle{
+            constructor(brand,speed,helmet){
+                super (brand,speed);
+                this.helmet=helmet;
+        }
+    }
+    let car1= new Car("mahindra",100,"petrol");
+    let bike1= new Bike("tvs",60,true);
+
+    
+     
+    document.write(car1.brand+" "+car1.speed+" "+car1.fueltype,"<br>");
+      document.write(bike1.brand+" "+bike1.speed+" "+bike1.helmet);
+
+      //que 4 (inheritance)
+      
+
+
+        
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+Variable - 
+
+
+something value is vry i.e. called variable .
+
+
+1. var  before 2015 
+
+2. let 
+
+3. const
+
+var  a=10;
+var b="sky";
+const a1=10 ;
+
+a1=20; cant be modify 
+a=40;
+
+
+decleration - 
+var a;
+
+inilization - 
+
+a=10;
+a=prompt("Enter the value of a ");
+
+
+decleration and inilization 
+
+var a=10;
+
+multiple decleration ;
+ var a,b,c,d,e;
+multiple inlization - 
+
+a=10,b=20,c=30;
+
+indivisual inlinzation and decleration - 
+
+var a=10;
+var b=20;
+
+
+operator - 
+when we perform a operation in a operand i. e. called operator .
+
+a+b 
+
++ - it is operator 
+
+a,b - operaend 
+
+a+b - operation 
+
+1. arithmetic operator - +,-,*,/,% 
+
+
+
+how to build a logic -
+
+
+
+a=10 ,b=20 swapping 
+
+
+a=20 ,b=10
+
+
+
+a =10   b=20  c 
+
+c=a
+a=b
+
+b=c
+
+2. conditional operator - <,>,<=,>= 
+
+
+
+
+
+Write a JavaScript program to add two numbers using the + operator.
+
+Write a program to subtract two numbers using the - operator.
+
+Write a program to multiply two numbers using the * operator.
+
+Write a program to divide two numbers using the / operator.
+
+Write a program to find the remainder of two numbers using the % operator.
+
+
+Write a program to calculate the square of a number using the ** operator.
+
+Write a program to calculate the cube of a number.
+
+Write a program to find the average of three numbers.
+
+Write a program to calculate total marks and percentage of a student.
+
+Write a program to swap two numbers using arithmetic operators (without using a third variable).
+
+
+Write a program to calculate the total bill amount if the price of one item is ₹150 and quantity is entered by the user.
+
+Write a program to calculate simple interest using arithmetic operators.
+(Formula: SI = (P × R × T) / 100)
+
+Write a program to convert Celsius to Fahrenheit.
+(Formula: (C × 9/5) + 32)
+
+Write a program to calculate the area of a rectangle.
+
+Write a program to calculate the area of a circle.
+
+Write a program to check whether a number is even or odd using %.
+
+Write a program to find the last digit of a given number.
+
+Write a program to calculate salary after adding bonus and deducting tax.

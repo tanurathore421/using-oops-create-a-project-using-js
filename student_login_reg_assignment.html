@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>student registration</h1>
+    <input id="sroll" type="text" placeholder="roll number">
+     <input  id="spass" type="password" placeholder="Password">
+    <button onclick="register()"> register</button>
+    <hr>
+
+    <h1>student login</h1>
+     <input id="lroll" type="text" placeholder="roll number">
+    <input id="lpass" type="text" placeholder="password">
+    <button onclick="login()">login</button>
+
+    <p id="result"></p>
+
+    <script>
+        class Student {
+            constructor(rollNo, password) {
+                this.rollNo = rollNo;
+                this.password = password;
+            }
+        }
+
+        class StudentAuth {
+            constructor() {
+                this.reg = [];
+            }
+        
+
+        register(student){
+            this.reg.push(student);
+            return "registration successful";
+        }
+
+        login(rollNo, password){
+            for (let student of this.reg) {
+                if (student.rollNo === rollNo && student.password === password) {
+                    return "login successful";
+                }
+            }
+            return "invalid credentials";
+        }
+    }
+
+        let auth = new StudentAuth();
+
+        function register() {
+            let rollNo = document.getElementById("sroll").value;
+            let password = document.getElementById("spass").value;
+
+            
+            let student = new Student(rollNo, password);
+            let msg = auth.register(student);
+
+            document.getElementById("result").innerText = msg;
+
+        }
+
+        function login(){
+              let rollNo = document.getElementById("lroll").value;
+            let password = document.getElementById("lpass").value;
+
+                let msg = auth.login(rollNo, password);
+            document.getElementById("result").innerText = msg;
+        }
+    </script>
+

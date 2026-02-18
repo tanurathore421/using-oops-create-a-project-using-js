@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        
+                 //que19
+                 var m1, m2, m3, m4, m5;
+                 m1 = parseInt(prompt("enter marks for m1"));
+                 m2 = parseInt(prompt("enter marks for m2"));
+                 m3 = parseInt(prompt("enter marks for m3"));
+                 m4 = parseInt(prompt("enter marks for m4"));
+                 m5 = parseInt(prompt("enter marks for m5"));
+         
+                 let total = m1 + m2 + m3 + m4 + m5;
+                 let percent = (total / 500) * 100;
+                 alert("total marks" + total);
+                 alert("percent" + percent);
+         
+                 if (percent >= 33) {
+                     document.write("pass");
+                 }
+                 else {
+                     document.write("fail");
+                 }
+           
+        
+                //que35
+                let l = parseInt(prompt("enter the lenght"));
+                let b = parseInt(prompt("enter the breadth"));
+        
+                let area = l * b;
+                let perimeter = 2 * (l + b);
+        
+                alert("area of rectangle is" + area);
+                alert("perimeter of rectangle is" + perimeter);
+        
+                if (area > perimeter) {
+                    document.write("area is greater");
+                }
+                else {
+        
+                    document.write("perimeter is greater");
+                }
+        
+        
+        
+            //que36
+                var m1, m2, m3, m4, m5;
+                m1 = parseInt(prompt("enter marks for m1"));
+                m2 = parseInt(prompt("enter marks for m2"));
+                m3 = parseInt(prompt("enter marks for m3"));
+                m4 = parseInt(prompt("enter marks for m4"));
+                m5 = parseInt(prompt("enter marks for m5"));
+        
+                let total = m1 + m2 + m3 + m4 + m5;
+                let percent = (total / 500) * 100;
+                alert("total marks" + total);
+                alert("percent" + percent);
+        
+                if (percent >= 60) {
+                    document.write("grade A");
+                }
+        
+                else if (percent >= 50) {
+                    document.write("grade B");
+                }
+        
+                else if (percent >= 40) {
+                    document.write("grade C");
+                }
+        
+                else  {
+                    document.write("grade D");
+                }
+
+
+        //que 37
+        let lastmonth = parseInt(prompt("enter last month unit"));
+        let currentmonth = parseInt(prompt("enter current month unit"));
+        let units = currentmonth - lastmonth;
+        let bill = 0;
+
+        if (units <= 100) {
+            bill = units * 2;
+        }
+        else if( units <= 200){
+            bill = units * 3;
+        }
+        else if( units <= 300){
+            bill = units * 4;
+        }
+        else{
+            bill=units*5;
+        }
+        
+        document.write("total units"+units,"<br>");
+           document.write("total bill is"+bill);
+           */
+
+        //que 38
+        let e = parseInt(prompt("enter marks of english"));
+        let m = parseInt(prompt("enter marks of maths"));
+        let p = parseInt(prompt("enter marks of physics"));
+        let total = e + m + p;
+        let average = total / 3;
+        alert("total marks" + total);
+        alert("average" + average);
+
+        if (e > 75 && m > 75 && p > 75 && average > 80) {
+            alert("pass");
+        }
+        else {
+            alert("fail");
+        }
+
+    </script>
+
+
+</body>
+
+</html>

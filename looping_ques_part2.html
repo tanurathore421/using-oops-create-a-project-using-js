@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+
+        //factorial of an number
+        let num = 5;
+        let fact = 1;
+        for (a = 1; a <= num; a++) {
+            fact = fact * a;
+        } document.write(fact);
+
+        //no. is prime or not
+        let n = 7;
+        let prime = true;
+        for (a = 2; a < 7; a++) {
+            if (n % a == 0) {
+                prime = false;
+                break;
+            }
+            if (prime && n > 1) {
+                document.write("prime");
+            }
+            else {
+                document.write("not prime");
+            }
+        }
+
+        for (let a = 1; a <= 5; a++) {
+            let star = "";
+            for (let b = 1; b <= a; b++) {
+                star = star + "*";
+            }
+            document.write(star)
+        }
+    </script>
+</body>
+
+</html>

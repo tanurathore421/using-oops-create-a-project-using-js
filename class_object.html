@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //program 1
+        class Arithmetic {
+            constructor(a, b) {
+                this.a = a;
+                this.b = b;
+
+            }
+            add() {
+                let c = this.a + this.b;
+                document.write("addition:", c, "<br>");
+            }
+
+            sub() {
+                let c = this.a - this.b;
+                document.write("subtratcion:", c, "<br>");
+
+            }
+            mul() {
+                let c = this.a * this.b;
+                document.write("multiply:", c, "<br>");
+            }
+
+            div() {
+                let c = this.a / this.b;
+                document.write("divide:", c, "<br>");
+            }
+
+
+            modul() {
+                let c = this.a % this.b;
+                document.write("modulus:", c, "<br>");
+            }
+
+
+        }
+        let obj = new Arithmetic(20, 10);
+
+        obj.add();
+        obj.sub();
+        obj.mul();
+        obj.div();
+        obj.modul();
+
+
+        //program 2
+        class Loop {
+           
+           constructor()
+           {
+                    for (let i = 1; i <= 20; i++) {
+                   document.write(i,"<br>");
+                }
+
+
+           }
+        }
+        let object = new Loop();
+    
+    </script>
+</body>
+
+</html>

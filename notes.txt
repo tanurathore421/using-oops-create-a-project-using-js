@@ -1,0 +1,83 @@
+ladder else if - 
+
+if(condtion)
+{
+
+}
+else if(condtion)
+{
+
+}
+
+
+switch --> if we have a number of cases like week ,month ,year  then we are switch .
+
+switch(expression)
+{
+	case case_nu:    statement ;
+			break;
+	case case_nu:    statement ;
+			break;
+	case case_nu:    statement ;
+			break;
+	case case_nu:    statement ;
+			break;
+	.
+	.
+	.
+	.. n number of case 
+
+	defalut :
+		statment ;
+}
+
+
+
+1. The Basic Level: Day of the Week
+The Task: Create a variable called dayNumber (1-7). Write a switch case that prints the name of the day.
+
+Input: 1 → Output: "Monday"
+
+Input: 5 → Output: "Friday"
+
+Default: "Invalid day"
+
+2. The Conditional Logic: Grade Evaluator
+The Task: Write a program that takes a single letter grade (A, B, C, D, F) and returns a description.
+
+'A': "Excellent work!"
+
+'B': "Well done!"
+
+'C': "You passed."
+
+'F': "Better luck next time."
+
+Default: "Unknown grade."
+
+3. The Calculator: Simple Math
+The Task: Create a simple calculator. You need three variables: num1, num2, and operator (+, -, *, /). Use a switch case on the operator to perform the correct math.
+
+Input: 5, 10, "+" → Output: 15
+
+Input: 20, 4, "/" → Output: 5
+
+4. The "Fall-Through" Challenge: Seasons
+The Task: Group multiple cases together. Given a month number (1-12), output which season it belongs to.
+
+12, 1, 2: "Winter"
+
+3, 4, 5: "Spring"
+
+6, 7, 8: "Summer"
+
+9, 10, 11: "Autumn"
+
+
+
+
+Write a program that takes a single character variable char and determines if it is a vowel, a consonant, or not a letter at all.
+
+Write a program that takes a single character variable char and determines if it is a vowel, a consonant, or not a letter at all.
+
+

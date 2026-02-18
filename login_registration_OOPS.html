@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login & Register - OOPS JS</title>
+</head>
+
+<body>
+
+    <h2>Register</h2>
+    <input type="text" id="ruser" placeholder="Username"><br><br>
+    <input type="password" id="rpass" placeholder="Password"><br><br>
+    <button onclick="register()">Register</button>
+
+    <hr>
+
+    <h2>Login</h2>
+    <input type="text" id="luser" placeholder="Username"><br><br>
+    <input type="password" id="lpass" placeholder="Password"><br><br>
+    <button onclick="login()">Login</button>
+
+    <p id="result"></p>
+
+    <script>
+
+        // User Class
+        class User {
+            constructor(username, password) {
+                this.username = username;
+                this.password = password;
+            }
+        }
+
+        // Auth System Class
+        class AuthSystem {
+            constructor() {
+                this.users = [];
+            }
+
+            register(user) {
+                this.users.push(user);
+                return "Registration Successful";
+            }
+
+            login(username, password) {
+                for (let user of this.users) {
+                    if (user.username === username && user.password === password) {
+                        return "Login Successful";
+                    }
+                }
+                return "Invalid Username or Password";
+            }
+        }
+
+        // Create Object
+        let auth = new AuthSystem();
+
+        // Register Function
+        function register() {
+            let username = document.getElementById("ruser").value;
+            let password = document.getElementById("rpass").value;
+
+            let user = new User(username, password);
+            let msg = auth.register(user);
+
+            document.getElementById("result").innerText = msg;
+        }
+
+        // Login Function
+        function login() {
+            let username = document.getElementById("luser").value;
+            let password = document.getElementById("lpass").value;
+
+            let msg = auth.login(username, password);
+            document.getElementById("result").innerText = msg;
+        }
+
+    </script>
+
+</body>
+
+</html>
